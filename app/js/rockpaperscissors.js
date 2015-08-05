@@ -21,15 +21,17 @@ function randomPlay() {
 /*           Write Your Code Below            */
 ////////////////////////////////////////////////
 
+
 function getPlayerMove(move) {
-    var evaluatePlayer = move || getInput();
-    return evaluateComputer;
+    move || getInput();
+    return getPlayerMove;
 }
 
 function getComputerMove(move) {
-    var evaluateComputer =  move || randomPlay();
-    return evaluateComputer;
+    move || randomPlay();
+    return getComputerMove();
 }
+
 
 function getWinner(playerMove,computerMove) {
     var winner;
