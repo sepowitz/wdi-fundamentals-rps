@@ -22,15 +22,13 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    var PlayerMove = move;
-    PlayerMove || getInput();
-    return playerMove;
+    var evaluatePlayer = move || getInput();
+    return evaluateComputer;
 }
 
 function getComputerMove(move) {
-    var ComputerMove = move;
-    ComputerMove || randomPlay();
-    return computerMove;
+    var evaluateComputer =  move || randomPlay();
+    return evaluateComputer;
 }
 
 function getWinner(playerMove,computerMove) {
