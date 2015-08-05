@@ -23,13 +23,15 @@ function randomPlay() {
 
 
 function getPlayerMove(move) {
-    move || getInput();
-    return getPlayerMove;
+    var move;
+    var playerMove = move || getInput();
+    return playerMove;
 }
 
 function getComputerMove(move) {
-    move || randomPlay();
-    return getComputerMove();
+    var move;
+    var computerMove = move || randomPlay();
+    return computerMove ;
 }
 
 
