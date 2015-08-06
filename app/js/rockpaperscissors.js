@@ -18,21 +18,22 @@ function randomPlay() {
     }
 }
 ////////////////////////////////////////////////
-/*           Write Your Code Below            */
+/*            Get Moves             */
 ////////////////////////////////////////////////
 
 
 function getPlayerMove(move) {
-    var playerMove;
-    playerMove = move || getInput();
-    return playerMove;
+    return move || getInput();
+    
 }
 
 function getComputerMove(move) {
-    var computerMove;
-    computerMove = move || randomPlay();
-    return computerMove;
+    return move || randomPlay();
 }
+
+////////////////////////////////////////////////
+/*           Determine Winner         */
+////////////////////////////////////////////////
 
 function getWinner(playerMove,computerMove) {
     var winner;
