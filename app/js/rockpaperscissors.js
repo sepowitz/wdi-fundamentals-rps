@@ -22,14 +22,29 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 
+
 function getPlayerMove(move) {
-    return move || getInput();
+    var playerMove = move;
+    if (move == "rock" || move == "paper" || move == "scissors") {
+        return playerMove;
+        else {
+            return getInput();
+        }
+    }
     
 }
 
 function getComputerMove(move) {
-    return move || randomPlay();
+    var computerMove = move;
+    if (move == "rock" || move == "paper" || move == "scissors") {
+        return computerMove;
+        else {
+            return randomPlay();
+        }
+    }
+    
 }
+
 
 ////////////////////////////////////////////////
 /*           Determine Winner         */
