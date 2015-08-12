@@ -24,25 +24,12 @@ function randomPlay() {
 
 
 function getPlayerMove(move) {
-    var playerMove = move;
-    if (move == "rock" || move == "paper" || move == "scissors") {
-        return playerMove;
-        else {
-            return getInput();
-        }
-    }
+    return move || getInput();
     
 }
 
 function getComputerMove(move) {
-    var computerMove = move;
-    if (move == "rock" || move == "paper" || move == "scissors") {
-        return computerMove;
-        else {
-            return randomPlay();
-        }
-    }
-    
+    return move || randomPlay();
 }
 
 
